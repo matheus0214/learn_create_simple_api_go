@@ -1,8 +1,9 @@
 package routes
 
 import (
+	usersroutes "matheus0214/learn_gin/modules/users/routes"
+
 	"github.com/gin-gonic/gin"
-	usersroutes "github.com/matheus0214/projects/learn_gin/modules/users/routes"
 )
 
 // Routes all application routes

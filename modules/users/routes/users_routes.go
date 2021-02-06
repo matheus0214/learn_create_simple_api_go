@@ -1,6 +1,6 @@
 package routes
 
-import "github.com/matheus0214/projects/learn_gin/modules/users/controllers"
+import "matheus0214/learn_gin/modules/users/controllers"
 
 // UsersRoutes interface represent user routes
 type UsersRoutes interface {

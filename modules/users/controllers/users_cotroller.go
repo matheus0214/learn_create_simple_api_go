@@ -5,9 +5,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"matheus0214/learn_gin/modules/users/models"
+	"matheus0214/learn_gin/modules/users/services"
+
 	"github.com/gin-gonic/gin"
-	"github.com/matheus0214/projects/learn_gin/modules/users/models"
-	"github.com/matheus0214/projects/learn_gin/modules/users/services"
 )
 
 // UsersController implemets routes to user

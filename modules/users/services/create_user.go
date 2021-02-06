@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/matheus0214/projects/learn_gin/modules/users/models"
-	"github.com/matheus0214/projects/learn_gin/modules/users/repository"
+	"matheus0214/learn_gin/modules/users/models"
+	"matheus0214/learn_gin/modules/users/repository"
 )
 
 // CreateUser create user service

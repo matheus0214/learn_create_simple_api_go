@@ -1,8 +1,9 @@
 package main
 
 import (
+	"matheus0214/learn_gin/routes"
+
 	"github.com/gin-gonic/gin"
-	"github.com/matheus0214/projects/learn_gin/routes"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package models
 import (
 	"errors"
 
-	"github.com/matheus0214/projects/learn_gin/shared"
+	"matheus0214/learn_gin/shared"
 )
 
 // UserModel modeling user model
