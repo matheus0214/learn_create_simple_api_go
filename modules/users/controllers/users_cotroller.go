@@ -25,7 +25,7 @@ func (ur *UsersController) Create(c *gin.Context) {
 	datas, err := ioutil.ReadAll(c.Request.Body)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
-			"error": "Erro to get datas",
+			"error": "Error to get datas",
 		})
 		return
 	}
@@ -47,8 +47,8 @@ func (ur *UsersController) Create(c *gin.Context) {
 
 	_, err = services.CreateUser(newUser)
 	if err != nil {
-		c.JSON(http.StatusOK, gin.H{
-			"error": models.ErrInvalidFieldEmailErrorUser.Error(),
+		c.JSON(http.StatusBadRequest, gin.H{
+			"error": err.Error(),
 		})
 		return
 	}

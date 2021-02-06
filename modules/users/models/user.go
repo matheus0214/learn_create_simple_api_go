@@ -17,7 +17,8 @@ type UserModel struct {
 var (
 	ErrInvalidFieldNameErrorUser  = errors.New("Field name should not be empty")
 	ErrInvalidFieldEmailErrorUser = errors.New("Field email should not be empty")
-	ErrUserEmailAlreadyInUser     = errors.New("Email already in use")
+	ErrUserEmailAlreadyInUse      = errors.New("Email already in use")
+	ErrUserDoesNotFound           = errors.New("User does not found")
 )
 
 // ValidateEmail validation to check user email is empty
@@ -41,5 +42,9 @@ func (u *UserModel) ValidateFieldsUser() []shared.ErrorsModel {
 		err = append(err, shared.ErrorsModel{Field: "name", Message: ErrInvalidFieldNameErrorUser.Error()})
 	}
 
-	return err
+	if len(err) >= 1 {
+		return err
+	}
+
+	return nil
 }
